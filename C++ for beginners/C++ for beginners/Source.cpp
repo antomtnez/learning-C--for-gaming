@@ -3,20 +3,15 @@ using namespace std;
 
 int main()
 {
-	char myCharacter;
-	myCharacter = 'y';
+	int a(1);
+	int b = 13;
 
-	int myInt;
-	myInt = 5;
-
-	cout << myCharacter << endl;
-	cout << myInt << endl;
-
-	myCharacter = 'n';
-	myInt = 7;
-
-	cout << myCharacter << endl;
-	cout << myInt << endl;
+	if (a == b) {
+		cout << "Error" << endl;
+	}
+	else {
+		cout << "World!" << endl;
+	}
 
 	system("pause");
 }
