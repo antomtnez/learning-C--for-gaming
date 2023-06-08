@@ -1,20 +1,28 @@
 #include <iostream>
 using namespace std;
 
+void welcome() {
+	cout << "Welcome" << endl;
+}
+
+void printNumber(int numToPrint) {
+	cout << numToPrint << endl;
+}
+
+int giveANumber() {
+	return 5;
+}
+
+int add(int a, int b) {
+	int result = a + b;
+	return result;
+}
+
 int main()
 {
-	int a(1);
-	int b = 13;
+	welcome();
 
-	if (a > b) {
-		cout << "a is bigger than b" << endl;
-	}
-	else if (a < b) {
-		cout << "a is less than b" << endl;
-	}
-	else {
-		cout << "a is equals than b" << endl;
-	}
+	printNumber(add(giveANumber(), 6));
 
 	system("pause");
 }
