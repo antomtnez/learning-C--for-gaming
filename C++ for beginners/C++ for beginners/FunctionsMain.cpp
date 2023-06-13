@@ -8,16 +8,19 @@ void AskYesOrNoQuestion();
 void Operations();
 void TheWhileProject();
 void DoWhileMethod();
+void ForMethod();
 
 int main() 
 {
-	AskYesOrNoQuestion();
+	//AskYesOrNoQuestion();
 
-	Operations();
+	//Operations();
 
-	TheWhileProject();
+	//TheWhileProject();
 
-	DoWhileMethod();
+	//DoWhileMethod();
+
+	ForMethod();
 
 	system("pause");
 }
@@ -100,4 +103,17 @@ void DoWhileMethod() {
 		}
 
 	} while (condition);
+}
+
+void ForMethod() {
+
+	for (int i(0); i <= 10; i++) {
+		for (int j(0); j <= 10; j++) {
+			for (int k(0); k <= 10; k++) {
+				cout << "i = " << i << ", j = " << j << ", k = " << k << endl;
+			}
+		}
+	}
+
+	cout << endl;
 }
