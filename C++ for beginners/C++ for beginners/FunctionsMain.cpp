@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 void welcome();
@@ -6,6 +7,7 @@ char getYesNo();
 void printResponse(char responseToPrint);
 void AskYesOrNoQuestion();
 void Operations();
+
 void TheWhileProject();
 void DoWhileMethod();
 void ForMethod();
@@ -18,6 +20,10 @@ void Print(int num);
 void Print(string str);
 void Print(double d);
 void OverloadingFunctions();
+
+void StringsInPractice();
+
+void AndOrConditionals();
 
 int main() 
 {
@@ -33,7 +39,11 @@ int main()
 
 	//DifferenceBtwPassingByValueVSPassingByReference();
 
-	OverloadingFunctions();
+	//OverloadingFunctions();
+
+	//StringsInPractice();
+
+	//AndOrConditionals();
 
 	system("pause");
 }
@@ -166,3 +176,27 @@ void OverloadingFunctions() {
 void Print(int num) { cout << num << endl; }
 void Print(string str) { cout << str << endl; }
 void Print(double d) { cout << d << endl; }
+
+void StringsInPractice() {
+	string myString;
+
+	myString = "My dog's name is: ";
+	string first = "Spot ";
+	string last("Jones");
+
+	cout << myString + first + last << endl;
+}
+
+void AndOrConditionals() {
+	int i = 1;
+	int j = 2;
+	int k = 3;
+
+	if ((i <= k && i < j) || (j >= k)) {
+		cout << "This will be printed. " << endl;
+	}
+
+	if ((i <= k && i < j) || (j >= k)) {
+		cout << "This won't be printed. " << endl;
+	}
+}
