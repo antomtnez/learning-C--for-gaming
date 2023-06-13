@@ -10,6 +10,15 @@ void TheWhileProject();
 void DoWhileMethod();
 void ForMethod();
 
+void AddOneByValue(int num);
+void AddOneByReference(int& num);
+void DifferenceBtwPassingByValueVSPassingByReference();
+
+void Print(int num);
+void Print(string str);
+void Print(double d);
+void OverloadingFunctions();
+
 int main() 
 {
 	//AskYesOrNoQuestion();
@@ -20,7 +29,11 @@ int main()
 
 	//DoWhileMethod();
 
-	ForMethod();
+	//ForMethod();
+
+	//DifferenceBtwPassingByValueVSPassingByReference();
+
+	OverloadingFunctions();
 
 	system("pause");
 }
@@ -117,3 +130,39 @@ void ForMethod() {
 
 	cout << endl;
 }
+
+void AddOneByValue(int num) {
+	num++;
+}
+
+void AddOneByReference(int& num) {
+	num++;
+}
+
+void DifferenceBtwPassingByValueVSPassingByReference() {
+	int a = 1;
+
+	cout << "Start a value:" << a << endl;
+
+	AddOneByValue(a);
+
+	cout << "Added one by value: " << a << endl;
+
+	AddOneByReference(a);
+
+	cout << "Added one by reference: " << a << endl;
+}
+
+void OverloadingFunctions() {
+	int a = 1;
+	string text("A man");
+	double longNum = 2.89898998;
+
+	Print(a);
+	Print(text);
+	Print(longNum);
+}
+
+void Print(int num) { cout << num << endl; }
+void Print(string str) { cout << str << endl; }
+void Print(double d) { cout << d << endl; }
