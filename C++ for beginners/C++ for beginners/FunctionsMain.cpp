@@ -7,6 +7,7 @@ void printResponse(char responseToPrint);
 void AskYesOrNoQuestion();
 void Operations();
 void TheWhileProject();
+void DoWhileMethod();
 
 int main() 
 {
@@ -15,6 +16,8 @@ int main()
 	Operations();
 
 	TheWhileProject();
+
+	DoWhileMethod();
 
 	system("pause");
 }
@@ -72,4 +75,29 @@ void TheWhileProject() {
 		cout << count << endl;
 		count++;
 	}
+}
+
+void DoWhileMethod() {
+	double numberPi = 3.14159;
+	double numberE = 2.718281828;
+
+	int count = 0;
+
+	bool condition = true;
+
+	do {
+		cout << "Number PI is " << numberPi << endl;
+		cout << "Number E is " << numberE << endl;
+		cout << "Pi + (E * count) = " << numberPi + (numberE * count) << endl;
+
+		count++;
+
+		if (count <= 100) {
+			condition = true;
+		}
+		else {
+			condition = false;
+		}
+
+	} while (condition);
 }
